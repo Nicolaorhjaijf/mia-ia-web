@@ -12,7 +12,7 @@ st.write("Dibuja un número del 0 al 9 en el recuadro negro.")
 # 1. Cargar el modelo guardado
 @st.cache_resource
 def load_my_model():
-    return tf.keras.models.load_model('modelo_mnist.keras')
+    return tf.keras.models.load_model('modelo_mnist.keras')  # <--- ESTA LÍNEA DEBE TENER ESPACIOS AL PRINCIPIO
 
 model = load_my_model()
 
